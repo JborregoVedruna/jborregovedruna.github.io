@@ -1,7 +1,7 @@
 lockfileVersion: '6.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
 dependencies:
@@ -14,6 +14,12 @@ dependencies:
   hotkeypad:
     specifier: 0.1.0
     version: 0.1.0
+  jborregovedruna.github.io:
+    specifier: 'file:'
+    version: 'file:'
+  minimalist-portfolio-json:
+    specifier: 'file:'
+    version: 'file:'
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -3802,4 +3808,26 @@ packages:
 
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
+    dev: false
+
+  'file:':
+    resolution: {directory: '', type: directory}
+    name: jborregovedruna.github.io
+    version: 1.0.0
+    dependencies:
+      '@astrojs/check': 0.4.1(typescript@5.3.3)
+      astro: 4.3.2(typescript@5.3.3)
+      hotkeypad: 0.1.0
+      typescript: 5.3.3
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - prettier
+      - prettier-plugin-astro
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
     dev: false
