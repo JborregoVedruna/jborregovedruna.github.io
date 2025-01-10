@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "Este es mi portfolio",
   "main": "index.js",
-  "scripts": {
-    "dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "npx standard"
-  },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JborregoVedruna/jborregovedruna.github.io.git"
@@ -22,14 +18,19 @@
     "url": "https://github.com/JborregoVedruna/jborregovedruna.github.io/issues"
   },
   "homepage": "https://github.com/JborregoVedruna/jborregovedruna.github.io#readme",
-  "devDependencies": {
-    "standard": "^17.1.2"
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "express": "4.21.2"
-  },
-  "eslintConfig": {
-    "extends": "standard"
+    "@astrojs/check": "0.4.1",
+    "astro": "4.3.2",
+    "hotkeypad": "0.1.0",
+    "jborregovedruna.github.io": "file:",
+    "minimalist-portfolio-json": "file:",
+    "typescript": "5.3.3"
   }
-
 }
